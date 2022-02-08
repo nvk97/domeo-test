@@ -3,7 +3,7 @@ export const SET_TO_LOCAL_STORAGE_CART = (val) => {
 };
 
 export const GET_FROM_LOCAL_STORAGE_CART = (state) => {
-  state.cart = JSON.parse(localStorage.getItem("cart")).cart || [];
+  state.cart = JSON.parse(localStorage.getItem("cart"))?.cart || [];
 };
 
 export const SET_PRODUCT_TO_CART_STATE = function (state, product) {
